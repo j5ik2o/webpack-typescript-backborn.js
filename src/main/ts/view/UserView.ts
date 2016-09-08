@@ -10,7 +10,7 @@ export default class UserView extends Backbone.View<UserModel> {
 
     initialize(options: any = {}) {
 
-        this.template = require("../template/UserView.html");
+        this.template = require("../template/UserView.hbs");
         options.model.on("change", this.updateFullName.bind(this));
     }
 
